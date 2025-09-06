@@ -1,0 +1,101 @@
+footer {
+  width: 100%;
+  text-align: center;
+  margin: 24px 0 12px;
+  color: #f3e8ff;
+  font-size: 0.9rem;
+  animation: fadeInUp 2s;
+  padding: 16px;
+}
+
+@media (min-width: 700px) {
+  footer {
+    max-width: 1200px;
+    margin: 32px auto 16px;
+    padding: 24px;
+    border-radius: 24px;
+  }
+} 
+
+#connectWallet2 {
+  background: #376541;
+  color: #f3e8ff;
+  border: 2px solid #082d16;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, border 0.3s, color 0.3s;
+  margin-right: 20px;
+}
+
+#connectWallet2:hover {
+  background: #09471d;
+  transform: translateY(-1px);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50%;
+  margin-bottom: -5%;
+  gap: 30px;
+  padding: 20px;
+}
+
+.soc-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.soc-div:hover {
+  transform: scale(1.1);
+}
+
+.soc {
+  width: 16px;
+    height: 16px; 
+  object-fit: contain;
+  border-radius: 8px;
+  transition: filter 0.3s ease;
+}
+
+.soc:hover {
+  filter: brightness(1.2);
+}
+
+@media (min-width: 769px) {
+  .socials {
+    margin-bottom: 5px; 
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .socials {
+    gap: 15px;
+    padding: 10px;
+    
+  }
+  
+  .soc {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .socials {
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  .soc {
+    width: 16px;
+    height: 16px;
+  }
+}
