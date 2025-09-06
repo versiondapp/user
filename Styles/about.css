@@ -1,0 +1,29 @@
+.about {
+  padding: 16px 12px;
+  animation: fadeIn 1.8s;
+}
+
+.about h2 {
+  color: #c084fc;
+  font-size: 1.5rem;
+  text-shadow: 0 0 8px #a855f744;
+}
+
+.about p {
+  color: #f3e8ff;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 700px) {
+  .about {
+    padding: 24px 18px;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about p {
+    font-size: 1.1rem;
+  }
+} 
