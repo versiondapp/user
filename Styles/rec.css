@@ -1,0 +1,98 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #131313; 
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .section {
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    max-width: 90%; 
+    width: 100%;
+  }
+  
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .response {
+    width: 60px;
+    height: 60px;
+    object-fit: contain; 
+  }
+  
+  .notice {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .noticeText {
+    font-size: 0.9rem;
+    color: #d1d5db; 
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .reconnect {
+    background: #166726;
+    color: #d7d3d3;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .reconnect:hover {
+    background: #22432b;
+  }
+  
+  @media (min-width: 768px) {
+    body {
+      padding: 2rem;
+    }
+  
+    .section {
+      max-width: 500px;
+      padding: 2rem;
+    }
+  
+    .notice {
+      font-size: 1.8rem;
+    }
+  
+    .noticeText {
+      font-size: 1rem;
+    }
+  
+    .response {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .reconnect {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+    }
+  }
