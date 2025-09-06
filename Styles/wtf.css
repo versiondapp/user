@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #201e1e;
+  }
+  
+  .response {
+    width: 100px;
+    /* Default width */
+    height: auto;
+    /* Allow height to adjust based on the image */
+    object-fit: cover;
+  }
+  
+  .section {
+    width: 90%;
+    /* Use a percentage for responsiveness */
+    max-width: 500px;
+    /* Set a max width */
+    padding: 20px;
+    text-align: center;
+    /* Center text content */
+  }
+  
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Add spacing below the image */
+  }
+  
+  .notice {
+    font-size: 2em;
+    font-weight: 700;
+    color: #ada6a6;
+  }
+  
+  .noticeText {
+    font-size: 1.2em;
+    color: #9e9797;
+  }
+  
+  .reconnect {
+    color: rgb(0, 0, 0);
+    background-color: rgb(44, 185, 16);
+    border: none;
+    padding: 15px 25px;
+    /* Simplified padding */
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    /* Change cursor on hover */
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .response {
+      width: 80px;
+      /* Adjust image size */
+    }
+  
+    .notice {
+      font-size: 1.8rem;
+      /* Smaller font for notice */
+    }
+  
+    .noticeText {
+      font-size: 1.2rem;
+      /* Smaller font for notice text */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .response {
+      width: 70px;
+      /* Further adjust image size for small screens */
+    }
+  
+    .notice {
+      font-size: 1.4rem;
+      /* Smaller font for notice */
+    }
+  
+    .noticeText {
+      font-size: 0.8rem;
+      /* Smaller font for notice text */
+    }
+  
+    .section {
+      padding: 10px;
+      /* Reduced padding on smaller screens */
+    }
+  } 
