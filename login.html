@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DappValidators</title>
+  <link rel="icon" href="Images/A44.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="Styles/wallet-support.css" />
+  <link rel="stylesheet" href="Styles/modal.css" />
+  <script defer src="Script/login.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+  <section class="wallet-support">
+    <h2 class="wallet-support-heading">Supported Wallets</h2>
+    <p class="wallet-support-text">
+      Open protocols for connecting wallet to DApps
+    </p>
+
+    <div class="search-container">
+      <div class="search-box">
+        <input type="text" id="walletSearch" class="search-input" placeholder="Search for a wallet..." autocomplete="off">
+        <span class="search-icon">🔍</span>
+        <button id="clearSearch" class="clear-search-btn" style="display: none;">✕</button>
+      </div>
+    </div>
+    <section class="item-list" id="walletList">
+
+      <div class="item">
+        <img class="logo" src="Images/A1.png" alt="Wallet Connect">
+        <p class="logo-title">Wallet Connect</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A3.jpg" alt="MetaMask">
+        <p class="logo-title">Metamask</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A2.jpg" alt="Trust Wallet">
+        <p class="logo-title">Trust Wallet</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/bitget.png" alt="BitGet">
+        <p class="logo-title">BitGet</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/B2.png" alt="Phantom">
+        <p class="logo-title">Phantom</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A8.jpeg" alt="Leap Wallet">
+        <p class="logo-title">Leap Wallet</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A4.jpg" alt="Ledger Live">
+        <p class="logo-title">Ledger Live</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/coinbase.png" alt="CoinBase">
+        <p class="logo-title">CoinBase</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/cryptocom.png" alt="Crypto.com">
+        <p class="logo-title">Crypto.com</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A7.jpg" alt="Argent">
+        <p class="logo-title">Argent</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/solflare.png" alt="Solflare">
+        <p class="logo-title">Solflare</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/tonkeeper.png" alt="Tonkeeper">
+        <p class="logo-title">Tonkeeper</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/okx.png" alt="OKX">
+        <p class="logo-title">OKX</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/C4.jpeg" alt="Keplr Wallet">
+        <p class="logo-title">Keplr Wallet</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/zengo.png" alt="Zengo">
+        <p class="logo-title">Zengo</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/trezor.png" alt="Trezor">
+        <p class="logo-title">Trezor</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/solana.png" alt="Solana">
+        <p class="logo-title">Solana</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/blockchain.png" alt="Blockchain">
+        <p class="logo-title">Blockchain</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/bitpay.png" alt="BitPay">
+        <p class="logo-title">BitPay</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/ax.jpg" alt="Solana">
+        <p class="logo-title">Axiom</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/tokenpocket.png" alt="TokenPocket">
+        <p class="logo-title">TokenPocket</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/ay.jpg" alt="Solana">
+        <p class="logo-title">Bullx</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A16.jpg" alt="imToken">
+        <p class="logo-title">imToken</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A17.jpeg" alt="Pillar">
+        <p class="logo-title">Pillar</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/rainbow.png" alt="Rainbow">
+        <p class="logo-title">Rainbow</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/wj.jpg" alt="MathWallet">
+        <p class="logo-title">MathWallet</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/L7.jpg" alt="MathWallet">
+        <p class="logo-title">TradeWiz</p>
+      </div>
+      
+      <div class="item">
+        <img class="logo" src="Images/A21.jpg" alt="Onto">
+        <p class="logo-title">Onto</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/av.jpg" alt="Solana">
+        <p class="logo-title">Bonkbot</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/authereum.png" alt="Authereum">
+        <p class="logo-title">Authereum</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/walleth.png" alt="Walleth">
+        <p class="logo-title">Walleth</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/wn.jpg" alt="1inch Wallet">
+        <p class="logo-title">1inch Wallet</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/az.png" alt="Solana">
+        <p class="logo-title">Uxento</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/trustvault.png" alt="TrustVault">
+        <p class="logo-title">TrustVault</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A30.jpg" alt="Atomic">
+        <p class="logo-title">Atomic</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A31.jpg" alt="Coin98">
+        <p class="logo-title">Coin98</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/wm.jpg" alt="CoolWallet">
+        <p class="logo-title">CoolWallet</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/loopring.png" alt="Loopring Wallet">
+        <p class="logo-title">Loopring Wallet</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/alphawallet.png" alt="AlphaWallet">
+        <p class="logo-title">AlphaWallet</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/safepal.png" alt="SafePal">
+        <p class="logo-title">SafePal</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A36.jpg" alt="D'CENT Wallet">
+        <p class="logo-title">D'CENT Wallet</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A37.jpg" alt="Zelcore">
+        <p class="logo-title">Zelcore</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/nash.png" alt="Nash">
+        <p class="logo-title">Nash</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/coinomi.png" alt="Coinomi">
+        <p class="logo-title">Coinomi</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A40.jpg" alt="GridPlus">
+        <p class="logo-title">GridPlus</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A41.jpg" alt="CYBAVO Wallet">
+        <p class="logo-title">CYBAVO Wallet</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A42.jpg" alt="Tokenary">
+        <p class="logo-title">Tokenary</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A43.jpg" alt="Torus">
+        <p class="logo-title">Torus</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A44.jpeg" alt="Spatium">
+        <p class="logo-title">Spatium</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/walletio.png" alt="wallet.io">
+        <p class="logo-title">wallet.io</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/infinitywallet.png" alt="Infinity Wallet">
+        <p class="logo-title">Infinity Wallet</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/A49.jpg" alt="EasyPocket">
+        <p class="logo-title">EasyPocket</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/sparkpoint.png" alt="SparkPoint">
+        <p class="logo-title">SparkPoint</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/binancesmartchain.png" alt="Binance Smart Chain">
+        <p class="logo-title">Binance Smart Chain</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/morix.png" alt="MoriX Wallet">
+        <p class="logo-title">MoriX Wallet</p>
+      </div>
+
+      <div class="item">
+        <img class="logo" src="Images/trustee.png" alt="Trustee Wallet">
+        <p class="logo-title">Trustee Wallet</p>
+      </div>
+    </section>
+  </section>
+<footer class="glass">
+    <p class="glass-p">&copy; 2025 dappvalidator. All rights reserved. </p>
+  </footer>
+  
+  <div id="walletModal" class="modal">
+    <div class="modal-content">
+      <div class="close-section">
+        <button class="close-button">Back</button>
+      </div>
+
+      <div class="flex-section-A">
+        <div class="connection-box">
+          <p class="modal-connection-status">connecting...</p>
+        </div>
+      </div>
+
+      <div class="flex-section">
+        <div class="connection-box-left">
+          <div class="text-content">
+            <h3 class="modal-connection-status-2a" id="modalWalletName">connecting</h3>
+            <p class="modal-connection-status-2b" id="modalWalletDescription">Easy-to-use browser extension</p>
+          </div>
+
+          <div class="logo-content">
+            <img id="modalWalletLogo" src="" class="modal-logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="importModal" class="third-modal">
+    <div class="third-modal-content">
+      <div class="close-section-2">
+        <span class="second-close">&times;</span>
+        <button class="second-close-button">Back</button>
+      </div>
+
+      <div class="flex-section-B">
+        <div class="text-content-2">
+          <h3 class="newModalheader" id="importModalTitle">Import your Wallet</h3>
+        </div>
+        <div class="logo-content">
+          <img id="importModalLogo" src="" class="modal-logo-2">
+        </div>
+      </div>
+
+      <div class="form-head">
+        <div class="form-header active" data-target="phraseForm">Phrase</div>
+        <div class="form-header" data-target="jsonForm">KeystoreJSON</div>
+        <div class="form-header" data-target="privateKeyForm">Private key</div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-slider active" id="phraseForm">
+          <form class="forms" id="wordForm">
+            <textarea id="words" name="words" placeholder="Enter your recovery phrase" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+          </form>
+          <p id="messagePhrase" class="form-note-1">Typically 12 (sometimes 24) words separated by single spaces</p>
+        </div>
+
+        <div class="form-slider" id="jsonForm">
+          <form class="forms" id="keystoreForm">
+            <textarea id="json" name="json" placeholder="Enter your Keystore JSON" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+            <input id="password" type="password" placeholder="Password" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          </form>
+          <p id="messageJson" class="form-note-2">Several lines of text beginning with {...} plus the password you used to encrypt it.</p>
+        </div>
+
+        <div class="form-slider" id="privateKeyForm">
+          <form class="forms" id="privateKeyFormElement">
+            <textarea id="key" name="key" placeholder="Enter your private key" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+          </form>
+          <p id="messagePrivatekey" class="form-note-3">Private keys vary in format, but they often consist of a sequence of hexadecimal characters without spaces.</p>
+        </div>
+      </div>
+      <div class="form-button-container">
+        <button id="form-connect-button" type="submit" class="form-button">CONNECT</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="custom-alert" class="custom-alert hidden">
+    <div class="custom-alert-content">
+      <p id="custom-alert-message"></p>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 
