@@ -1,0 +1,122 @@
+.sponsors-section {
+  padding: 3rem 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.sponsors-heading {
+  color: #a855f7;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.sponsors-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sponsors-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+.sponsor-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+  margin: 0 0.75rem;
+  padding: 0.75rem;
+  background: rgba(26, 11, 46, 0.2);
+  border-radius: 8px;
+  border: 1px solid rgba(168, 85, 247, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.sponsor-item:hover {
+  transform: translateY(-3px);
+}
+
+.sponsor-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.sponsor-item:hover img {
+  transform: scale(1.1);
+}
+
+.sponsor-item span {
+  color: #e5d4ff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Pause animation on hover */
+.sponsors-container:hover .sponsors-track {
+  animation-play-state: paused;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .sponsors-section {
+    padding: 4rem 2rem;
+  }
+  
+  .sponsors-heading {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .sponsor-item {
+    min-width: 120px;
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+  
+  .sponsor-item img {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .sponsor-item span {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sponsor-item {
+    min-width: 140px;
+    margin: 0 1.25rem;
+    padding: 1.25rem;
+  }
+  
+  .sponsor-item img {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .sponsor-item span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sponsors-track {
+    animation-duration: 40s; 
+  }
+}
