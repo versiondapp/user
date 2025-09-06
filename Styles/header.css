@@ -1,0 +1,160 @@
+.logo-text {
+  background: linear-gradient(45deg, #0000ff, #1e90ff, #00bfff, #87ceeb, #b0e0e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+  border-bottom: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  animation: fadeInDown 0.8s;
+}
+
+.xlogo {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #c084fc;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10px;
+}
+
+.xlogo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.xlogo-text {
+  background: linear-gradient(45deg, #1e90ff, #b0e0e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 2px;
+}
+
+nav {
+  display: none;
+}
+
+#connectWallet {
+  background: #376541;
+  color: #f3e8ff;
+  border: 1px solid #082d16;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s, border 0.2s;
+  margin-right: 10px;
+}
+
+#connectWallet:hover {
+  background: #09471d;
+  transform: translateY(-1px);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 8px 10px;
+  box-sizing: border-box;
+  animation: fadeInDown 0.8s;
+}
+
+.section-spacer {
+  margin: 6rem 0;
+  padding: 2rem 0;
+}
+
+.hero {
+  margin-bottom: 4rem;
+  padding: 3rem 0;
+}
+
+.news-ticker {
+  margin: 4rem 0;
+  padding: 2rem 0;
+}
+
+.case-box {
+  margin: 6rem 0;
+  padding: 4rem 0;
+}
+
+.steps-box {
+  margin: 6rem 0;
+  padding: 4rem 0;
+}
+
+.wallet-support {
+  margin: 6rem 0;
+  padding: 4rem 0;
+}
+
+footer {
+  margin-top: 6rem;
+  padding: 2rem 0;
+}
+
+.glass {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 700px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  .xlogo {
+    font-size: 1.4rem;
+    gap: 12px;
+    margin-left: 20px;
+  }
+
+  .xlogo-icon {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    min-height: 28px;
+  }
+
+  .xlogo-text {
+    padding-left: 4px;
+  }
+
+  #connectWallet {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+
+  .glass-nav {
+    padding: 12px 20px;
+  }
+}
