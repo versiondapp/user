@@ -1,0 +1,99 @@
+.news-ticker {
+  width: 100%;
+  padding: 4px;
+  background: rgba(18, 173, 46, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 0;
+  border: none;
+  margin: 8px 0;
+  animation: fadeIn 1.5s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 50px;
+
+}
+
+.news-ticker h2 {
+  color: #c084fc;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  text-align: center;
+  text-shadow: 0 0 8px #a855f744;
+}
+
+.ticker-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ticker-content {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 25s linear infinite;
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  color: #f3e8ff;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.ticker-item .coin-name {
+  font-weight: 600;
+}
+
+.ticker-item .coin-price {
+  color: #e9d5ff;
+}
+
+.ticker-item .arrow-up {
+  color: #00ff7f;
+  font-size: 0.7rem;
+}
+
+.ticker-item .arrow-down {
+  color: #ff4040;
+  font-size: 0.7rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.ticker-content:hover {
+  animation-play-state: paused;
+}
+
+/* Larger screens (tablet and desktop) */
+@media (min-width: 700px) {
+  .news-ticker {
+    max-width: 1200px;
+    margin: 16px auto;
+    padding: 8px;
+    border-radius: 0;
+  }
+
+  .news-ticker h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .ticker-item {
+    font-size: 0.85rem;
+    padding: 6px 16px;
+  }
+
+  .ticker-item .arrow-up,
+  .ticker-item .arrow-down {
+    font-size: 0.8rem;
+  }
+} 
